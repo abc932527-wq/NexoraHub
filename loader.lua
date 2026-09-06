@@ -3,7 +3,7 @@
     Copyright © 2026 NexoraHub. All Rights Reserved.
 ]]
 
-local URL = "https://raw.githubusercontent.com/Nexora1987/Nexorahub/main/StealAnEgg.lua"
+local URL = "https://raw.githubusercontent.com/Nexora1987/Nexorahub/main/script/StealAnEgg.lua"
 
 local ok, result = pcall(function()
     return loadstring(game:HttpGet(URL))()
