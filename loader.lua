@@ -1,14 +1,15 @@
 --[[
-    © 2026 NexoraHub. All Rights Reserved.
-    Unauthorized copying, redistribution, or re-uploading is prohibited.
+    NexoraHub Loader
+    Copyright © 2026 NexoraHub. All Rights Reserved.
 ]]
 
-local URL = "ILAGAY_DITO_ANG_RAW_URL_NG_StealAnEgg.lua"
+local URL = "https://raw.githubusercontent.com/Nexora1987/Nexorahub/main/StealAnEgg.lua"
 
-local success, err = pcall(function()
-    loadstring(game:HttpGet(URL))()
+local ok, result = pcall(function()
+    return loadstring(game:HttpGet(URL))()
 end)
 
-if not success then
-    warn("[NexoraHub] Failed to load StealAnEgg.lua: " .. tostring(err))
+if not ok then
+    warn("[NexoraHub] Failed to load StealAnEgg.lua")
+    warn("[NexoraHub] Error: " .. tostring(result))
 end
